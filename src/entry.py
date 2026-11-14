@@ -1,0 +1,8 @@
+from workers import WorkerEntrypoint
+
+class Default(WorkerEntrypoint):
+    async def fetch(self, request):
+        return Response(
+            "Parlay Intelligence is online!",
+            status=200
+        )
